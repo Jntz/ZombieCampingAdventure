@@ -4,10 +4,15 @@ using System.Collections;
 public class OnGUIScript : MonoBehaviour {
 
 	//Menubutton
-	public Rect menuBtnRect = new Rect(0f, 	//x
+	public Rect menuButtonRect = new Rect(0f, 	//x
 	                                   0f,	//y
 	                                   0f,	//width
 	                                   0f);	//height
+	public Rect menuContentButtonRect = new Rect(Screen.width / 2f - 50f, 	//x
+                                       		Screen.height / 2f - 25f,		//y
+                                       		100f,	//width
+                                       		50f);	//height
+	private Rect tempMenuContentButtonRect;
 	//Healthbar
 	public Rect fullHealthBarRect = new Rect(0f, 	//x
 	                                     	0f,	//y
@@ -22,27 +27,47 @@ public class OnGUIScript : MonoBehaviour {
 	public int itemCount = 3; //Determinate how many item (what player hold) we want to show in GUI
 
 
-	public float[] itemXPositions;
+	private float[] itemXPositions;
 
 	public Texture2D redColorTexture;
 	public Texture2D blueColorTexture;
 	public Texture2D itemBorderTexture;
 	public Texture2D itemBorderSelectedTexture;
+	public Texture2D menuButtonTexture;
+	public Texture2D menuContentTexture;
+	public Texture2D menuContentButtonTexture;
+	public Transform player;
 
 	private int selectedItemIndex = 2;
 	private Rect tempItemRect; 
-	//Item area (image + borders)
-	//
+
+	private MouseLook cameraMouseLookScript;	//y-axes
+	private MouseLook playerMouseLookScript; //x-axes
+
+	private float widthRatioToFullHealth; 
+
+	//State machine
+	private bool menuOpen = false;
+	private bool soundOn = true;
+
+
 
 	// Use this for initialization
 	void Start () {
 		//Rect position initializations
 
-		menuBtnRect.x = 5f;
-		menuBtnRect.y = Screen.height - 5f - menuBtnRect.height;
+		cameraMouseLookScript = Camera.main.GetComponent<MouseLook>();
+		playerMouseLookScript = player.GetComponent<MouseLook>();
+		menuContentButtonRect.x = Screen.width / 2f - 50f;
+		menuContentButtonRect.y = Screen.height / 2f - 25f;
+
+		menuButtonRect.x = 5f;
+		menuButtonRect.y = Screen.height - 5f - menuButtonRect.height;
 
 		fullHealthBarRect.x = Screen.width/2f - fullHealthBarRect.width/2f;
 		fullHealthBarRect.y = Screen.height - 5f - fullHealthBarRect.height;
+
+		widthRatioToFullHealth = fullHealthBarRect.width / 100;
 
 		healthBarRect = fullHealthBarRect;
 
@@ -62,7 +87,7 @@ public class OnGUIScript : MonoBehaviour {
 	}
 
 	void Update () {
-		//Only for testing purpose
+
 		if (Input.GetKeyDown ("0")) {
 			ChangeSelectedItemIndex(0);
 		}
@@ -94,14 +119,45 @@ public class OnGUIScript : MonoBehaviour {
 		else if(Input.GetKeyDown ("9")) {
 			ChangeSelectedItemIndex(9);
 		}
+		else if(Input.GetKeyDown(KeyCode.Escape)) {
+			//Open menu
+			toggleMenu();
+		}
+	
+		//Only for testing purpose
+		else if(Input.GetMouseButtonUp(0)) {
+			increaseDecreaseHealth(-10);
+		}
+		else if(Input.GetMouseButtonUp(1)) {
+			increaseDecreaseHealth(10);
+		}
+
+
 	}
 
 	void OnGUI() {
-		if(GUI.Button(menuBtnRect, "Menu")) {
+		if(GUI.Button(menuButtonRect, "Menu")) {
 			//Open menu
+			toggleMenu();
+		}
+		if(menuOpen) {
+			tempMenuContentButtonRect = menuContentButtonRect;
+
+			if(GUI.Button(tempMenuContentButtonRect, "Return the game")) {
+				toggleMenu();
+			}
+			tempMenuContentButtonRect.y += tempItemRect.height + 20f;
+			if(GUI.Button(tempMenuContentButtonRect, soundOn ? "Mute" : "Turn sound ON")) {
+				//Toggle sound
+				//do if you have time
+			}
+			tempMenuContentButtonRect.y += tempItemRect.height + 20f;
+			if(GUI.Button(tempMenuContentButtonRect, "Exit to menu")) {
+				Application.LoadLevel(0);
+			}
 		}
 		//draw blue bar (health and maxhealth difference)
-		GUI.DrawTexture(healthBarRect, blueColorTexture);
+		GUI.DrawTexture(fullHealthBarRect, blueColorTexture);
 		
 		//Draw red bar (health)
 		GUI.DrawTexture(healthBarRect, redColorTexture);
@@ -124,4 +180,22 @@ public class OnGUIScript : MonoBehaviour {
 		selectedItemIndex = itemCount - whichOne;
 	}
 
+	private void toggleMenu() {
+		//toggle menu and game timescale
+		menuOpen = (menuOpen == false);
+		Debug.Log ("MenuOpen" + menuOpen);
+		
+		Time.timeScale = ((Time.timeScale == 0) ? 1 : 0);
+		Debug.Log ("Timescale: " + Time.timeScale);
+
+		if(cameraMouseLookScript != null)
+			Debug.Log("CameraMouseLookScript gamepause state: " + cameraMouseLookScript.toggleGamePause());
+		if(playerMouseLookScript != null)
+			Debug.Log("PlayerMouseLookScript gamepause state: " + playerMouseLookScript.toggleGamePause());
+	}
+
+	public void increaseDecreaseHealth(int amount) {
+		if(healthBarRect.width + amount <= fullHealthBarRect.width && healthBarRect.width + amount >= 0)
+			healthBarRect.width += amount * widthRatioToFullHealth;
+	}
 }

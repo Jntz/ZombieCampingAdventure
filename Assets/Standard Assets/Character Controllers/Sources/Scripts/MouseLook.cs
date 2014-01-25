@@ -27,11 +27,13 @@ public class MouseLook : MonoBehaviour {
 
 	public float minimumY = -60F;
 	public float maximumY = 60F;
+	public bool gamePause = false;
 
 	float rotationY = 0F;
 
 	void Update ()
 	{
+		if(gamePause)return;
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
@@ -57,7 +59,14 @@ public class MouseLook : MonoBehaviour {
 	void Start ()
 	{
 		// Make the rigid body not change rotation
+		gamePause = false;
+
 		if (rigidbody)
 			rigidbody.freezeRotation = true;
+	}
+
+	public bool toggleGamePause() {
+		gamePause = (gamePause == false);
+		return gamePause;
 	}
 }
