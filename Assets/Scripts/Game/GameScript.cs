@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameScript : MonoBehaviour {
 
+	//GameScript is link to another gameobjects and components
 	public Transform Player;
 
 

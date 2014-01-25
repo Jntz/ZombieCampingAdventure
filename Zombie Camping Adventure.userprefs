@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\OnGUIScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Item\CollectableItemScript.cs">
     <Files>
+      <File FileName="Assets\Scripts\Item\CollectableItemScript.cs" Line="6" Column="2" />
       <File FileName="Assets\Scripts\GUI\OnGUIScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\OnGUIScript.cs" Line="103" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -36,7 +36,9 @@ public class OnGUIScript : MonoBehaviour {
 	public Texture2D menuButtonTexture;
 	public Texture2D menuContentTexture;
 	public Texture2D menuContentButtonTexture;
-	public Transform player;
+	private GameObject game;
+	private GameScript gameScript;
+	private Transform player;
 
 	private int selectedItemIndex = 2;
 	private Rect tempItemRect; 
@@ -55,9 +57,10 @@ public class OnGUIScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Rect position initializations
-
+		game = GameObject.Find("GAME");
+		gameScript = game.GetComponent<GameScript>();
 		cameraMouseLookScript = Camera.main.GetComponent<MouseLook>();
-		playerMouseLookScript = player.GetComponent<MouseLook>();
+		playerMouseLookScript = gameScript.Player.GetComponent<MouseLook>();
 		menuContentButtonRect.x = Screen.width / 2f - 50f;
 		menuContentButtonRect.y = Screen.height / 2f - 25f;
 
