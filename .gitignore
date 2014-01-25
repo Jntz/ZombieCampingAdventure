@@ -14,10 +14,11 @@ Assets/*
 !Assets/Scenes
 !Assets/Standard Assets
 !Assets/Textures
-!Scripts.meta
-!Materials.meta
-!Prefabs.meta
-!Scenes.meta
-!Standard Assets.meta
+!Assets/Scripts.meta
+!Assets/Materials.meta
+!Assets/Prefabs.meta
+!Assets/Scenes.meta
+!Assets/Standard Assets.meta
+!Assets/fbx
 
 

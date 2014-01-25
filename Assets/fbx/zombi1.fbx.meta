@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: c8991ff3fe0dedf449b73eda652e082c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: jalka_oikea
+    100006: jalka_vasen
+    100008: kammen_oikea
+    100010: kammen_vasen
+    100012: kasi1_oikea
+    100014: kasi1_vasen
+    100016: kasi2_oikea
+    100018: kasi2_vasen
+    100020: kaula
+    100022: Lamp
+    100024: lantio_oikea
+    100026: lantio_vasen
+    100028: olkapaa_oikea
+    100030: olkapaa_vasen
+    100032: paa
+    100034: Point
+    100036: reisi_oikea
+    100038: reisi_vasen
+    100040: saari_oikea
+    100042: saari_vasen
+    100044: selka1
+    100046: selka2
+    100048: selka3
+    100050: Sphere_000
+    100052: //RootNode
+    400000: Armature
+    400002: Camera
+    400004: jalka_oikea
+    400006: jalka_vasen
+    400008: kammen_oikea
+    400010: kammen_vasen
+    400012: kasi1_oikea
+    400014: kasi1_vasen
+    400016: kasi2_oikea
+    400018: kasi2_vasen
+    400020: kaula
+    400022: Lamp
+    400024: lantio_oikea
+    400026: lantio_vasen
+    400028: olkapaa_oikea
+    400030: olkapaa_vasen
+    400032: paa
+    400034: Point
+    400036: reisi_oikea
+    400038: reisi_vasen
+    400040: saari_oikea
+    400042: saari_vasen
+    400044: selka1
+    400046: selka2
+    400048: selka3
+    400050: Sphere_000
+    400052: //RootNode
+    4300000: Sphere_000
+    7400000: walking2 loop
+    7400002: walking1 start
+    7400004: walking1 start
+    7400006: walking1 loop
+    7400008: walking1 stop
+    7400010: hitting
+    7400012: idle
+    7400014: walking2 start
+    7400016: walking2 stop
+    9500000: //RootNode
+    13700000: Sphere_000
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walking1 start
+      takeName: ArmatureAction
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walking1 loop
+      takeName: ArmatureAction
+      firstFrame: 21
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walking1 stop
+      takeName: ArmatureAction
+      firstFrame: 101
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hitting
+      takeName: ArmatureAction
+      firstFrame: 121
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: ArmatureAction
+      firstFrame: 171
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walking2 start
+      takeName: ArmatureAction
+      firstFrame: 241
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walking2 loop
+      takeName: ArmatureAction
+      firstFrame: 261
+      lastFrame: 340
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walking2 stop
+      takeName: ArmatureAction
+      firstFrame: 341
+      lastFrame: 359
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/lantio_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea
+        weight: 1
+      - path: Armature/lantio_oikea/reisi_oikea/saari_oikea/jalka_oikea
+        weight: 1
+      - path: Armature/lantio_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen
+        weight: 1
+      - path: Armature/lantio_vasen/reisi_vasen/saari_vasen/jalka_vasen
+        weight: 1
+      - path: Armature/selka1
+        weight: 1
+      - path: Armature/selka1/selka2
+        weight: 1
+      - path: Armature/selka1/selka2/selka3
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/kaula/paa
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_oikea/kasi1_oikea/kasi2_oikea/kammen_oikea
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen
+        weight: 1
+      - path: Armature/selka1/selka2/selka3/olkapaa_vasen/kasi1_vasen/kasi2_vasen/kammen_vasen
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Point
+        weight: 1
+      - path: Sphere_000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
