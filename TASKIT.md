@@ -1,0 +1,4 @@
+
+
+- GUI esineille
+- Nappaa esine 
