@@ -29,14 +29,17 @@ public class StartingMenuGUIScript : MonoBehaviour {
 	private float menuButtonX = 0f; 			//buttons x-pos
 	private float menuButtonStartingY = 0f; //where is first button Y-pos
 
-	public Texture2D menuButtonTexture = null;
+	public Texture2D backgroundTexture = null;
+	public Texture2D startButtonTexture = null;
+	public Texture2D creditsButtonTexture = null;
+	public Texture2D exitButtonTexture = null;
 	public Texture2D menuContentTexture = null;
 	public string startingScene = "Scene0";
+	public GUIStyle style = new GUIStyle();
 
 	private bool showMenuContent = false;
-
+	
 	void Start () {
-
 		menuButtonStartingY = Screen.height / 4f;
 		menuButtonX = 25f;
 
@@ -64,26 +67,30 @@ public class StartingMenuGUIScript : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		if(menuButtonTexture == null ? GUI.Button(startGameRect, "Start Game") :
-   										GUI.Button(startGameRect, menuButtonTexture)) {
+		GUI.skin.button = style;
+
+		GUI.DrawTexture(new Rect(0f ,0f, Screen.width, Screen.height), backgroundTexture);
+
+		if(startButtonTexture == null ? GUI.Button(startGameRect, "Start Game") :
+		   GUI.Button(startGameRect, startButtonTexture)) {
 			//Start the game!
 			Application.LoadLevel(startingScene);
 		}
-		if(menuButtonTexture == null ? GUI.Button(creditsRect, "Credits") : 
-   									GUI.Button(creditsRect, menuButtonTexture)) {
+		if(creditsButtonTexture == null ? GUI.Button(creditsRect, "Credits") : 
+		   			GUI.Button(creditsRect, creditsButtonTexture)) {
 			//Credits
 			showMenuContent = (showMenuContent == false);
 		}
-		if(menuButtonTexture == null ? GUI.Button(guideRect, "Guides") : 
-		   								GUI.Button(guideRect, menuButtonTexture)) {
-			//Show controls (not required)
+		if(exitButtonTexture == null ? GUI.Button(guideRect, "Guides") : 
+		   		GUI.Button(guideRect, exitButtonTexture)) {
+			Application.Quit();
 		}
 
 		if(showMenuContent) {
-			GUI.contentColor = Color.black;
-			GUI.DrawTexture(menuContentRect, menuContentTexture);
+			GUI.contentColor = Color.white;
+			//GUI.DrawTexture(menuContentRect, menuContentTexture);
 			GUI.Label(menuContentRect, "Credits:\n\nJoni Ahola - Programmer\nHeikki Tikkanen - Map creator, Programmer" +
-				"Music producter\nAki Leinonen - Game Design, 2D Graphics, 3D modelling \nLaura Haapamäki - 3D Modelling\nMimosa Lehtinen 2D Graphics, Concept Art");
+				"Music producter\nAki Leinonen - Game Design, 2D Graphics, 3D modelling \nLaura Haapamäki - 3D Modelling\nMimosa Lehtinen - 2D Graphics, Concept Art");
 
 		}
 	}

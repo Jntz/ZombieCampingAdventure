@@ -1,0 +1,9 @@
+Zombie Camping Adventure frame sheet
+
+zombikuningatar.fbx
+
+sitting idle			1	-	60
+standing up			61	-	80
+the judgement			81	-	115
+hold the judgement stance	97
+bow				116	-	145

@@ -33,7 +33,6 @@ public class OnGUIScript : MonoBehaviour {
 	public Texture2D blueColorTexture;
 	public Texture2D itemBorderTexture;
 	public Texture2D itemBorderSelectedTexture;
-	public Texture2D menuButtonTexture;
 	public Texture2D menuContentTexture;
 	public Texture2D menuContentButtonTexture;
 	private GameObject game;
@@ -63,9 +62,7 @@ public class OnGUIScript : MonoBehaviour {
 		playerMouseLookScript = gameScript.Player.GetComponent<MouseLook>();
 		menuContentButtonRect.x = Screen.width / 2f - 50f;
 		menuContentButtonRect.y = Screen.height / 2f - 25f;
-
-		menuButtonRect.x = 5f;
-		menuButtonRect.y = Screen.height - 5f - menuButtonRect.height;
+	
 
 		fullHealthBarRect.x = Screen.width/2f - fullHealthBarRect.width/2f;
 		fullHealthBarRect.y = Screen.height - 5f - fullHealthBarRect.height;
@@ -126,23 +123,10 @@ public class OnGUIScript : MonoBehaviour {
 			//Open menu
 			toggleMenu();
 		}
-	
-		//Only for testing purpose
-		else if(Input.GetMouseButtonUp(0)) {
-			increaseDecreaseHealth(-10);
-		}
-		else if(Input.GetMouseButtonUp(1)) {
-			increaseDecreaseHealth(10);
-		}
-
-
+			
 	}
 
 	void OnGUI() {
-		if(GUI.Button(menuButtonRect, "Menu")) {
-			//Open menu
-			toggleMenu();
-		}
 		if(menuOpen) {
 			tempMenuContentButtonRect = menuContentButtonRect;
 
@@ -185,7 +169,9 @@ public class OnGUIScript : MonoBehaviour {
 
 	private void toggleMenu() {
 		//toggle menu and game timescale
+
 		menuOpen = (menuOpen == false);
+		Screen.showCursor = menuOpen ? false : true;
 		Debug.Log ("MenuOpen" + menuOpen);
 		
 		Time.timeScale = ((Time.timeScale == 0) ? 1 : 0);
