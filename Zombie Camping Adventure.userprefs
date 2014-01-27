@@ -1,14 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enemy\ZombieAnimationScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\StartingMenuGUIScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\GUI\OnGUIScript.cs" Line="181" Column="47" />
-      <File FileName="Assets\Scripts\GUI\StartingMenuGUIScript.cs" Line="21" Column="46" />
+      <File FileName="Assets\Scripts\GUI\OnGUIScript.cs" Line="42" Column="36" />
+      <File FileName="Assets\Scripts\GUI\StartingMenuGUIScript.cs" Line="93" Column="5" />
       <File FileName="Assets\Scripts\TriggerPoint\TriggerpointOnceScript.cs" Line="28" Column="46" />
       <File FileName="Assets\Scripts\Game\GameScript.cs" Line="13" Column="3" />
       <File FileName="Assets\Scripts\Enemy\ZombieQueenAnimationScript.cs" Line="14" Column="34" />
       <File FileName="Assets\Scripts\Enemy\ZombieAnimationScript.cs" Line="23" Column="2" />
-      <File FileName="Assets\Scripts\Enemy\ZombieAIScript.cs" Line="15" Column="25" />
+      <File FileName="Assets\Scripts\Enemy\ZombieAIScript.cs" Line="24" Column="49" />
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="48" Column="68" />
       <File FileName="Assets\Scripts\Player\PlayerScript.cs" Line="18" Column="36" />
     </Files>
