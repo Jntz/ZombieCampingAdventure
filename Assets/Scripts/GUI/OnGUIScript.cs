@@ -130,7 +130,7 @@ public class OnGUIScript : MonoBehaviour {
 		if(menuOpen) {
 			tempMenuContentButtonRect = menuContentButtonRect;
 
-			if(GUI.Button(tempMenuContentButtonRect, "Return the game")) {
+			if(GUI.Button(tempMenuContentButtonRect, "Return to game")) {
 				toggleMenu();
 			}
 			tempMenuContentButtonRect.y += tempItemRect.height + 20f;

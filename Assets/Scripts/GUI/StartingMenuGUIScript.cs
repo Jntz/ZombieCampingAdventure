@@ -90,7 +90,7 @@ public class StartingMenuGUIScript : MonoBehaviour {
 			GUI.contentColor = Color.white;
 			//GUI.DrawTexture(menuContentRect, menuContentTexture);
 			GUI.Label(menuContentRect, "Credits:\n\nJoni Ahola - Programmer\nHeikki Tikkanen - Map creator, Programmer" +
-				"Music producter\nAki Leinonen - Game Design, 2D Graphics, 3D modelling \nLaura Haapamäki - 3D Modelling\nMimosa Lehtinen - 2D Graphics, Concept Art\nNiko Mänty - 3D Modelling");
+				"Audio\nAki Leinonen - Game Design, 2D Graphics, 3D modeling \nLaura Haapamäki - 3D Modeling\nMimosa Lehtinen - 2D Graphics, Concept Art\nNiko Mänty - 3D Modeling");
 
 		}
 	}
