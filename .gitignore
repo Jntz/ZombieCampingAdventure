@@ -6,19 +6,5 @@
 *.csproj
 *.unityproj
 *.sln
-Assets/*
-!Assets/Scripts
-!Assets/Materials
-!Assets/Models
-!Assets/Prefabs
-!Assets/Scenes
-!Assets/Standard Assets
-!Assets/Textures
-!Assets/Scripts.meta
-!Assets/Materials.meta
-!Assets/Prefabs.meta
-!Assets/Scenes.meta
-!Assets/Standard Assets.meta
-!Assets/fbx
 
 
